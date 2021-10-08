@@ -140,12 +140,12 @@
       //
       // Return true if placed (spot was empty); false if not placed (spot already full)
 
-      // if (board[cellNumber] === null) {
+       if (board[cellNumber] === null) {
           board[cellNumber] = pieceType;
           return true;
-      // }
+       }
 
-      // return false;
+       return false;
   }
 
 
@@ -192,7 +192,7 @@
 
   function makeHumanMove(cellNumber) {
       // Make human move -- place X in the given 0-8 cell number
-      // if piece wasn't place, ignore this move
+      // if piece wasn't placed, ignore this move
       //   - update the board
       //   - if the game isn't over
       //     - make computer move
