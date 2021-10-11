@@ -7,8 +7,9 @@ app.get('/',function(req,res) {
   res.sendFile(path.join(__dirname, '../tictacjs.html'));
 });
 
-const port = process.env.PORT || 4000
 
+const SERVER_PORT = 4000
+const port = process.env.PORT || SERVER_PORT
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
